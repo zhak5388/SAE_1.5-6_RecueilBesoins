@@ -15,7 +15,7 @@ main .welcome {
 
     font-weight: bold;
     background-image: url("../content/pictures/jardin.jpg");
-    background-size: 1021px 500px;
+    background-size: 100%;
 
     text-align: center;
     color: #000000;
