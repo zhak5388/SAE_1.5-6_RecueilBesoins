@@ -35,52 +35,6 @@ main ul
     font-size: var(--fontSize);
 }
 
-
-
-/* .partiergpd
-{
-    border-width:12px;
-    border-radius: 30px;
-    border-style:outset;
-    padding: 20px;
-    background-color: var(--couleurParties);
-}
-
-.partie1
-{
-    border-width:12px;
-    border-radius: 30px;
-    border-style:outset;
-    padding: 20px;
-    background-color: var(--couleurParties);
-}
-
-.partie2
-{
-    border-width:12px;
-    border-radius: 30px;
-    border-style:outset;
-    padding: 20px;
-    background-color: var(--couleurParties);
-}
-
-.partie3
-{
-    border-width:12px;
-    border-radius: 30px;
-    border-style:outset;
-    padding: 20px;
-    background-color: var(--couleurParties);
-}
-
-.partiew3c
-{
-    border-width:12px;
-    border-radius: 30px;
-    border-style:outset;
-    padding: 20px;
-    background-color: var(--couleurParties);
-} */
 main .par
 {
     border-width:12px;
@@ -96,3 +50,17 @@ main table
     max-width: 100px;
     margin: auto;
 }
+
+.partiew3c table
+{
+    width: 100%;
+}
+
+/*
+.partiew3c table td
+{
+    width: 33%;
+}
+
+img
+*/
