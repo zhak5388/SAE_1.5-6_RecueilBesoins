@@ -3,14 +3,16 @@
 
 <head>
    <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit=no />
+
+    <!-- Empeche les navigateurs mobiles de dézoomer-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
 
    <!-- Il s'agit de la feuille de style pour les icônes utilisées -->
    <!-- Afin de reduire la taille de notre page nous preféré utiliser -->
    <!-- une feuille de style de font awesome hébergée -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      crossorigin="anonymous" referrerpolicy="no-referrer" >
 
    <!-- Feuille de style générale -->
    <link href="./css/mainStyle.css" rel="stylesheet">
@@ -30,15 +32,15 @@
    <header>
       <div class="wrapper">
          <div class="headerLogo">
-            <a href="../index.html">
+            <a href="../index.html" title="Cliquez ici pour aller à l'acceuil">
                <div><i class="fa-solid fa-user-graduate"></i></div>
             </a>
             <p>Visit'IUT!</p>
          </div>
          <nav>
             <a href="index.html">Accueil</a>
-            <a href="pages/itineraire.html">Visite</a>
-            <a href="pages/rgpd.html">RGPD</a>
+            <a href="pages/itineraire.html" title="Cliquez ici pour aller à la page de visite">Visite</a>
+            <a href="pages/rgpd.html" title="Cliquez ici pour aller à la page RGPD">RGPD</a>
          </nav>
       </div>
    </header>
@@ -68,10 +70,10 @@
                <div class="container-tabImg">
                   <table class="tabImg">
                      <tr>
-                        <td> <a href="./content/pictures/Carte.jpg" target="_blank"> <img
+                        <td> <a href="./content/pictures/Carte.jpg" target="_blank" title="Cliquez pour ouvrir dans un nouvel onglet"> <img
                                  src="./content/pictures/Carte.jpg" alt="Croquis de la maquette de la carte"> </a>
                         </td>
-                        <td> <a href="./content/pictures/Maquette.jpg" target="_blank">
+                        <td> <a href="./content/pictures/Maquette.jpg" target="_blank" title="Cliquez pour ouvrir dans un nouvel onglet">
                               <img src="./content/pictures/Maquette.jpg" alt="Croquis de la maquette generale du site">
                            </a> </td>
                      </tr>
@@ -102,7 +104,7 @@
             <hr>
             <table class="tabRépartition">
                <tr>
-                  <td id="td-2">Zen</td>
+                  <td class="td-2">Zen</td>
                   <td>
                      <ul>
                         <li>HTML : Structure générale (Header, Footer et main Wrapper ), page itinéraire</li>
@@ -112,7 +114,7 @@
                   </td>
                </tr>
                <tr>
-                  <td id="td-2">Imman</td>
+                  <td class="td-2">Imman</td>
                   <td id="td-2-bis">
                      <ul>
                         <li>HTML : Page RGPD et Acceuil</li>
@@ -121,7 +123,7 @@
                   </td>
                </tr>
                <tr>
-                  <td id="td-2">Caroline</td>
+                  <td class="td-2">Caroline</td>
                   <td>
                      <ul>
                         <li> HTML: Page d'Accueil</li>
