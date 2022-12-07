@@ -44,23 +44,27 @@ main .par
     padding: 20px;
     background-color: var(--couleurParties);
 }
-
-main table
+.containerValidationPicture a figure
 {
-    max-width: 100px;
-    margin: auto;
+    border: 1px solid yellow;
 }
 
-.partiew3c table
+.containerValidationPicture
+{
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.containerValidationPicture a
+{
+    border: 1px solid green;
+    width: 45%;
+}
+
+.containerValidationPicture img
 {
     width: 100%;
+    object-fit: cover;
 }
-
-/*
-.partiew3c table td
-{
-    width: 33%;
-}
-
-img
-*/
