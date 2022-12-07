@@ -60,11 +60,26 @@ main .par
 .containerValidationPicture a
 {
     border: 1px solid green;
+    color: white;
+    text-decoration: none;
     width: 45%;
 }
-
+.containerValidationPicture a:visited
+{
+    color: white;
+}
+.containerValidationPicture figure
+{
+    display: flex;
+    flex-direction: column;
+}
 .containerValidationPicture img
 {
     width: 100%;
     object-fit: cover;
+}
+.containerValidationPicture figcaption
+{
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
 }
