@@ -1,0 +1,245 @@
+:root{
+    --cardBackgroundColor: #f8f4e3; /*Numéro 12*/
+
+    --widthContent: 93%;
+    --widthFavorite: 7%;
+
+    --heigthCardIUT: 300px;
+    --marginTitle: 10px;
+    --heightTitle: 41px;
+
+    --widthCardText: 55%;
+    --widthCardImage : 45%;
+    --spaceBetweenPictureFavorite: 10px;
+
+    /*https://www.color-meanings.com/colors-that-go-with-blue*/
+    /*Numéro 7*/
+    --colorFavoriteBackground: rgba(0, 110, 144, 0.5); /*#006e90*/
+    --colorFavoriteBackgroundSelected: rgba(0, 110, 144, 1);
+    --colorFavoriteSelected: #ffd580 ;
+    
+    --arrondiBord: 25px;
+}
+
+
+
+/*Border for testing purposes*/
+/*
+.cardIUT
+{
+    border: 1px dashed black;
+    /*background-color: grey;
+}
+
+.cardIUT__content
+{
+    border: 1px dashed green;
+}
+
+.cardIUT__favorite
+{
+    border: 1px dashed orange;
+}
+
+.cardIUT__content__body
+{
+    border: 1px solid black;
+}
+
+.cardIUT__content__title
+{
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+*/
+
+/* Agencement des blocks*/
+
+.cardIUT
+{
+    margin: auto;
+    margin-bottom: 25px;
+
+    width: 90%;
+    height: var(--heigthCardIUT);
+    display: flex;
+}
+
+.cardIUT__content
+{
+    width: var(--widthContent);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cardIUT__favorite
+{
+    width: var(--widthFavorite);
+}
+
+.cardIUT__content__title
+{
+    height: var(--heightTitle);
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardIUT__content__title h3
+{
+    margin-top: var(--marginTitle);
+    margin-bottom: var(--marginTitle);
+    height: max-content;
+}
+
+.cardIUT__content__body
+{
+   /* flex: auto; /*Il y a une propriete plus appropriée*/
+   height: calc(var(--heigthCardIUT) - var(--heightTitle) - var(--arrondiBord));
+   display: flex;
+}
+
+.cardIUT__content__body__text
+{
+    width: var(--widthCardText);
+}
+
+.cardIUT__content__body__image
+{
+    width: var(--widthCardImage);
+    height: 100%; /*Ici parametre pour hauteur*/
+    
+}
+
+.cardIUT__content__body__image div
+{
+    height: 100%;
+}
+
+.cardIUT__content__body__image div img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Couleur et Bordures*/
+.cardIUT
+{
+    background-color: var(--cardBackgroundColor);
+    border-radius: var(--arrondiBord);
+    box-shadow: 0px 4px 9px rgba(0,0,0,0.10),-3px 0px 9px rgba(0,0,0,0.10), 3px 0px 9px rgba(0,0,0,0.10);
+}
+.cardIUT__favorite
+{
+    border-bottom-right-radius: var(--arrondiBord);
+    border-top-right-radius: var(--arrondiBord);
+    background-color: var(--colorFavoriteBackground);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cardIUT__content__body, .cardIUT__content__title
+{
+    margin-left: var(--arrondiBord);
+    margin-right: var(--spaceBetweenPictureFavorite);
+}
+
+.cardIUT__content__title
+{
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.cardIUT__content__title__anchor
+{
+    padding: 0;
+    font-size: 25px;
+    color: inherit;
+}
+
+.cardIUT__content__title__anchor i
+{
+    color: #33261d;
+}
+
+.cardIUT__content__title__anchor a:visited
+{
+    color: inherit;
+}
+
+.cardIUT__favorite__button
+{
+    font-size: 40px;
+    height: fit-content;
+    width: fit-content;
+
+    color: var(--cardBackgroundColor);
+}
+
+/*Alignement texte*/
+
+.cardIUT__content__body__text
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+/*Ajout favori animation*/
+
+.cardIUT__favorite--selected .cardIUT__favorite__button 
+{
+    color: var(--colorFavoriteSelected);
+}
+
+.cardIUT__favorite--selected
+{
+    background-color: var(--colorFavoriteBackgroundSelected);
+}
+
+.cardIUT__favorite__button:hover
+{
+    cursor: pointer;
+    color: var(--colorFavoriteSelected);
+
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+/** Carte inversée **/
+
+/*Inversion Favori*/
+
+.cardIUT--inverted 
+{
+    flex-direction: row-reverse;
+}
+
+.cardIUT--inverted .cardIUT__favorite
+{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+    border-bottom-left-radius: var(--arrondiBord);
+    border-top-left-radius: var(--arrondiBord);
+}
+
+.cardIUT--inverted .cardIUT__content__body, .cardIUT--inverted .cardIUT__content__title
+{
+    margin-left: var(--spaceBetweenPictureFavorite);
+    margin-right: var(--arrondiBord);
+}
+
+
+.cardIUT--inverted .cardIUT__content__body
+{
+    flex-direction: row-reverse;
+}
+
+.cardIUT--inverted .cardIUT__content__title
+{
+    text-align: end;
+}

@@ -1,0 +1,98 @@
+
+:root{
+
+    --couleurParties: rgba(192, 17, 17, 0.5);
+    --fontSize: 20px;
+    
+}
+
+/*Partie commun titres */
+
+main h1
+{
+    text-align: center;
+    color:#33261d;
+}
+
+main h2
+{
+    text-align: center;
+}
+
+/*----------------------------------*/
+
+main p
+{
+    text-justify: auto;
+    font-style: italic;
+    font-size: var(--fontSize);
+}
+
+main ul
+{
+    text-justify: auto;
+    font-style: italic;
+    font-size: var(--fontSize);
+}
+
+
+
+/* .partiergpd
+{
+    border-width:12px;
+    border-radius: 30px;
+    border-style:outset;
+    padding: 20px;
+    background-color: var(--couleurParties);
+}
+
+.partie1
+{
+    border-width:12px;
+    border-radius: 30px;
+    border-style:outset;
+    padding: 20px;
+    background-color: var(--couleurParties);
+}
+
+.partie2
+{
+    border-width:12px;
+    border-radius: 30px;
+    border-style:outset;
+    padding: 20px;
+    background-color: var(--couleurParties);
+}
+
+.partie3
+{
+    border-width:12px;
+    border-radius: 30px;
+    border-style:outset;
+    padding: 20px;
+    background-color: var(--couleurParties);
+}
+
+.partiew3c
+{
+    border-width:12px;
+    border-radius: 30px;
+    border-style:outset;
+    padding: 20px;
+    background-color: var(--couleurParties);
+} */
+main .par
+{
+    border-width:12px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.25), 0 4px 10px rgba(0,0,0,0.22);
+    padding: 20px;
+    background-color: var(--couleurParties);
+}
+
+main table
+{
+    max-width: 100px;
+    margin: auto;
+}

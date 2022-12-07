@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!--link href="../content/fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="../content/fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet" -->
+
+    <!-- Il s'agit de la feuille de style pour les icônes utilisées -->
+    <!-- Afin de reduire la taille de notre page nous preféré utiliser -->
+    <!-- une feuille de style de font awesome hébergée -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Feuille de style générale -->
+    <link href="../css/mainStyle.css" rel="stylesheet">
+
+    <!-- Feuille de style spécifique à la page-->
+    <link href="../css/itineraireStyle.css" rel="stylesheet">
+
+    <!-- Feuille de style spécifique aux cartes-->
+    <link href="../css/cardStyle.css" rel="stylesheet">
+
+    <!-- Feuille de style pour les medias queries-->
+    <link href="../css/mediaQueries.css" rel="stylesheet">
+    <title>A (quick) virtual visit of our IUT!</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="headerLogo">
+                <a href="../index.html" title="Click here to go homepage">
+                    <div><i class="fa-solid fa-user-graduate"></i></div>
+                </a>
+                <p>Visit'IUT!</p>
+            </div>
+            <nav>
+                <a href="../index.html" title="Click here to go homepage">Home</a>
+                <a href="itineraire.html">Visit</a>
+                <a href="rgpd.html" title="Click here to go GDPR page">GDPR</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <article lang="en">
+                <h1>A (quick) virtual visit of our IUT!</h1>
+                <div class="welcomeBox">
+                    <img src="../content/pictures/iut_montreuil.jpg" alt="Front of the IUT" class="welcomeBox__image">
+                    <p class="welcomeBox__paragraph__1">In the French university system, there are special educational
+                        facilities called University
+                        Institute of Technology (IUT). IUTs are always part of a University and they offer bachelor
+                        degrees that give both academic and professional skills.</p>
+                    <p>Montreuil University Institute of Technology is no exception to the rule and it is therefore
+                        attached to the Paris 8 University Vincennes-Saint-Denis. As you may know, our IUT offers
+                        various three-year bachelor degrees in the fields of computer science, information &
+                        communication, industrial quality & logistics and administrative & business management.</p>
+                    <p>We have prepared a virtual guided tour of our campus featuring the places that we believe you
+                        need to know! Also, you can use the favorite button if you want to bookmark it</p>
+                    <ol id="sommaireCarte">
+                        <li><a href="#card01">Library</a></li>
+                        <li><a href="#card02">Computer Room</a></li>
+                        <li><a href="#card03">Music Room</a></li>
+                        <li><a href="#card04">Cafeteria</a></li>
+                        <li><a href="#card05">Relaxation Area</a></li>
+                        <li><a href="#card06">Garden</a></li>
+                        <li><a href="#card07">Crous</a></li>
+                    </ol>
+                </div>
+
+                <div class="cardIUT" id="card01">
+                    <div class="cardIUT__content">
+                        <div class="cardIUT__content__title">
+                            <h2>Library</h2>
+                            <div class="cardIUT__content__title__anchor" title="Click to go back to the menu"><a
+                                    href="#sommaireCarte"><i class="fa-sharp fa-solid fa-arrow-up"></i></a></div>
+                        </div>
+                        <div class="cardIUT__content__body">
+                            <p class="cardIUT__content__body__text">
+                                The library can be found in building A, at the left of the entrance door.
+                                You can borrow books in different fields such as computer science, communication etc.
+                                Moreover a librarian is here to answer any questions you may have
+                            </p>
+                            <a href="../content/pictures/librairie.jpg" target="_blank"
+                                class="cardIUT__content__body__image "
+                                title="Click here to open the picture on a new tab">
+                                <div>
+                                    <img src="../content/pictures/librairie.jpg" alt="Bookshell of the library">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cardIUT__favorite">
+                        <div class="cardIUT__favorite__button">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardIUT cardIUT--inverted" id="card02">
+                    <div class="cardIUT__content">
+                        <div class="cardIUT__content__title">
+                            <h2>Computer Room</h2>
+                            <div class="cardIUT__content__title__anchor" title="Click to go back to the menu"><a
+                                    href="#sommaireCarte"><i class="fa-sharp fa-solid fa-arrow-up"></i></a></div>
+                        </div>
+                        <div class="cardIUT__content__body">
+                            <p class="cardIUT__content__body__text">
+                                A free to use computer at room A0-03 can be found in building A, with a total of 20
+                                computers you can use when you don’t have class. It is however forbidden to eat and
+                                drink in this room.
+                                It is possible to go to other computer rooms when nobody is attending class in those
+                                rooms.
+
+                            </p>
+                            <a href="../content/pictures/salle_info.jpg" target="_blank"
+                                class="cardIUT__content__body__image "
+                                title="Click here to open the picture on a new tab">
+                                <div>
+                                    <img src="../content/pictures/salle_info.jpg" alt="Computer Room">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cardIUT__favorite">
+                        <div class="cardIUT__favorite__button">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardIUT" id="card03">
+                    <div class="cardIUT__content">
+                        <div class="cardIUT__content__title">
+                            <h2>Music Room</h2>
+                            <div class="cardIUT__content__title__anchor" title="Click to go back to the menu"><a
+                                    href="#sommaireCarte"><i class="fa-sharp fa-solid fa-arrow-up"></i></a></div>
+                        </div>
+                        <div class="cardIUT__content__body">
+                            <p class="cardIUT__content__body__text">
+                                You can have access to a music room in building A either by asking the custodian at the
+                                entrance or by borrowing the key from the teacher’s room in building B.
+                                There are various instruments available such as 2 piano keyboards, 2 electric guitars, a
+                                drum etc..
+                            </p>
+                            <a href="../content/pictures/salle_de_musique.jpg" target="_blank"
+                                class="cardIUT__content__body__image "
+                                title="Click here to open the picture on a new tab">
+                                <div>
+                                    <img src="../content/pictures/salle_de_musique.jpg" alt="Music Room">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cardIUT__favorite">
+                        <div class="cardIUT__favorite__button">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardIUT cardIUT--inverted" id="card04">
+                    <div class="cardIUT__content">
+                        <div class="cardIUT__content__title">
+                            <h2>Cafeteria</h2>
+                            <div class="cardIUT__content__title__anchor" title="Click to go back to the menu"><a
+                                    href="#sommaireCarte"><i class="fa-sharp fa-solid fa-arrow-up"></i></a></div>
+                        </div>
+                        <div class="cardIUT__content__body">
+                            <p class="cardIUT__content__body__text">
+                                For lunch, you can access a cafeteria room at your right in building A to heat up your
+                                lunch or use a kettle if needed. There, you can sit with your classmates to enjoy your
+                                lunch.
+                                note : The cafeteria is different from the crous.
+                            </p>
+                            <a href="../content/pictures/cafetaria.jpg" target="_blank"
+                                class="cardIUT__content__body__image "
+                                title="Click here to open the picture on a new tab">
+                                <div>
+                                    <img src="../content/pictures/cafetaria.jpg" alt="Cafeteria">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cardIUT__favorite">
+                        <div class="cardIUT__favorite__button">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardIUT" id="card05">
+                    <div class="cardIUT__content">
+                        <div class="cardIUT__content__title">
+                            <h2>Relaxation Area</h2>
+                            <div class="cardIUT__content__title__anchor" title="Click to go back to the menu"><a
+                                    href="#sommaireCarte"><i class="fa-sharp fa-solid fa-arrow-up"></i></a></div>
+                        </div>
+                        <div class="cardIUT__content__body">
+                            <p class="cardIUT__content__body__text">
+                                Right after building A, a relaxation area is available with different seats, tables and
+                                a babyfoot where you can go to enjoy break time or lunchtime when the sun is out.
+                            </p>
+                            <a href="../content/pictures/aire_detente.jpg" target="_blank"
+                                class="cardIUT__content__body__image "
+                                title="Click here to open the picture on a new tab">
+                                <div>
+                                    <img src="../content/pictures/aire_detente.jpg"
+                                        alt="Relaxation Area during a sunny day">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cardIUT__favorite">
+                        <div class="cardIUT__favorite__button">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardIUT cardIUT--inverted" id="card06">
+                    <div class="cardIUT__content">
+                        <div class="cardIUT__content__title">
+                            <h2>Garden</h2>
+                            <div class="cardIUT__content__title__anchor" title="Click to go back to the menu"><a
+                                    href="#sommaireCarte"><i class="fa-sharp fa-solid fa-arrow-up"></i></a></div>
+                        </div>
+                        <div class="cardIUT__content__body">
+                            <p class="cardIUT__content__body__text">
+                                In the building E, once you are in, you can access a garden behind the door at the right
+                                where benches are available and you can enjoy the view.
+                            </p>
+                            <a href="../content/pictures/jardin.jpg" target="_blank"
+                                class="cardIUT__content__body__image "
+                                title="Click here to open the picture on a new tab">
+                                <div>
+                                    <img src="../content/pictures/jardin.jpg" alt="Garden during a sunny day">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cardIUT__favorite">
+                        <div class="cardIUT__favorite__button">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardIUT" id="card07">
+                    <div class="cardIUT__content">
+                        <div class="cardIUT__content__title">
+                            <h2>Crous</h2>
+                            <div class="cardIUT__content__title__anchor" title="Click to go back to the menu"><a
+                                    href="#sommaireCarte"><i class="fa-sharp fa-solid fa-arrow-up"></i></a></div>
+                        </div>
+                        <div class="cardIUT__content__body">
+                            <p class="cardIUT__content__body__text">
+                                In the building F, on the other side of the sidewalk, you can access the Crous which is
+                                the university restaurant service : there, you can buy menus composed of a meal, a
+                                dessert and a drink. The service is available between 11AM and 2PM.
+                            </p>
+                            <a href="../content/pictures/crous.jpg" target="_blank"
+                                class="cardIUT__content__body__image "
+                                title="Click here to open the picture on a new tab">
+                                <div>
+                                    <img src="../content/pictures/crous.jpg"
+                                        alt="Entrance of the CROUS: the University canteen">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cardIUT__favorite">
+                        <div class="cardIUT__favorite__button">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="module" src="ajoutFavori.js"></script>
+
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <ul>
+                <li>AMALADASSE Imann (C1)</li>
+                <li>ZHENG Caroline (C2)</li>
+                <li>AHMED-KAMAL Zen (C2)</li>
+            </ul>
+            <p>Groupe C - 07/12/2022</p>
+        </div>
+    </footer>
+</body>
+
+</html>

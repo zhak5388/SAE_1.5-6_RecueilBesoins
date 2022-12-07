@@ -1,0 +1,41 @@
+:root
+{
+    --couleurSommaire: #21331d;
+}
+article
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+h1
+{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.welcomeBox__paragraph__1
+{
+    margin-top: 0;
+}
+
+.welcomeBox__image
+{
+    width: 40%;
+    float: right;
+}
+.welcomeBox ol, .welcomeBox a, .welcomeBox a:visited
+{
+    color: var(--couleurSommaire);
+    font-weight: 500;
+}
+.welcomeBox a
+{
+    text-decoration: none;
+}
+
+.welcomeBox li:hover
+{
+    text-decoration: underline;
+}

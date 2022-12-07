@@ -1,0 +1,236 @@
+:root{
+    --couleurArrierePlanHeaderFooter: #006e90;/*#006e90;*//*305f7a;*/
+    --couleurArrierePlanBody: rgba(248, 244, 227, 0.4);/*#f2f2f2;*/
+    --couleurArrierePlanMain : #FFF;
+    --couleurTexteDefaut: #33261d;
+    /*--couleurSecondaire: #1c448e;*/
+
+    --couleurHeaderFooter: #FFFFFF;
+
+    --widthWrapperDesktop: 1100px;
+    --heightHeaderDesktop: 100px;
+    --heightFooterDesktop: 80px;
+
+    --paddingWrapperMain_collapse: 20px; /*Problème du margin collapse*/
+    --paddingWrapperFooter_collapse : 20px; /*Problème du margin collapse*/
+
+    --paddingRightLeftMainWrapper: 40px;
+
+    --tailleLogo: 50px;
+    --taillePoliceNav:18px;
+    --taillePoliceGéneral: 16px;
+    --taillePoliceTitreNiveauUn: 25px;
+    --taillePoliceTitreNiveauDeux: 18px;
+
+}
+
+/*** 1 - Mise en forme générale ***/
+
+/** 1.1 - Arrière Plan et Police **/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+body
+{
+    margin: 0;
+    background-color: var(--couleurArrierePlanBody);
+
+    color: var(--couleurTexteDefaut);
+    font-family: 'Ubuntu',  sans-serif;
+    font-size: var(--taillePoliceGéneral);
+}
+
+h1
+{
+    font-size: var(--taillePoliceTitreNiveauUn);
+    font-weight: bold;
+    color: var(--couleurArrierePlanHeaderFooter);
+}
+
+h2
+{
+    font-size: var(--taillePoliceTitreNiveauDeux);
+    font-weight: bold;
+}
+
+header, footer
+{
+    background-color: var(--couleurArrierePlanHeaderFooter);
+}
+
+main .wrapper
+{
+    background-color: var(--couleurArrierePlanMain);
+}
+
+/** 1.2 - Découpage et définition des tailles des blocks **/
+
+header
+{
+    height: var(--heightHeaderDesktop);
+}
+
+footer
+{
+    height: var(--heightFooterDesktop);
+    padding-top: var(--paddingWrapperFooter_collapse); /*Problème du margin collapse*/
+    padding-bottom: var(--paddingWrapperFooter_collapse);
+}
+
+.wrapper
+{
+    margin-right: auto;
+    margin-left: auto;
+    width: var(--widthWrapperDesktop);
+}
+
+main .wrapper
+{
+    min-height: calc(100vh - (var(--heightHeaderDesktop) + var(--heightFooterDesktop) + var(--paddingWrapperMain_collapse) +var(--paddingWrapperFooter_collapse)));
+    padding-top: var(--paddingWrapperFooter_collapse); /*Problème du margin collapse*/
+
+    box-sizing: border-box;
+    padding-left: var(--paddingRightLeftMainWrapper);
+    padding-right: var(--paddingRightLeftMainWrapper);
+}
+
+/*** 2 - Mise en forme Header ***/
+
+/*
+header .wrapper
+{
+    border: 1px dashed yellow;
+}
+header .wrapper div
+{
+    border: 1px dashed orange;
+}
+header .wrapper nav
+{
+    border: 1px dashed red;
+}
+*/
+
+/** 2.1 - Logo **/
+
+header .wrapper
+{
+    height: 95%;
+
+    color: var(--couleurHeaderFooter);
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerLogo p
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 25px;
+}
+
+.headerLogo div
+{
+    text-align: center;
+    font-size: var(--tailleLogo);
+}
+
+/** 2.2 - Barre de navigation **/
+
+header nav
+{
+    height: calc(var(--heightHeaderDesktop) / 4);
+
+    font-size: var(--taillePoliceNav);
+
+    display: flex;
+    gap: 30px;
+}
+
+header nav a
+{
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition-property: font-size;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.headerLogo a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+header nav a:visited, .headerLogo a:visited
+{
+    color: inherit;
+}
+
+header nav a:hover
+{
+    padding-bottom: 30px;
+    border-bottom: 3px solid var(--couleurHeaderFooter);
+    font-size: calc(var(--taillePoliceNav) + 1px);
+}
+
+/*** 3 - Mise en forme Footer ***/
+/*
+footer .wrapper
+{
+    border: 1px dashed yellow;
+}
+footer .wrapper ul
+{
+    border: 1px dashed orange;
+}
+footer .wrapper p
+{
+    border: 1px dashed red;
+}
+*/
+
+footer div
+{
+    color: var(--couleurHeaderFooter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    width: 60%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+footer div ul li
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer div p
+{
+    margin: 0;
+    text-align: center;
+}

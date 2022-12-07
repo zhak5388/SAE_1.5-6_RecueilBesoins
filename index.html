@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit=no />
+
+   <!-- Il s'agit de la feuille de style pour les icônes utilisées -->
+   <!-- Afin de reduire la taille de notre page nous preféré utiliser -->
+   <!-- une feuille de style de font awesome hébergée -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- Feuille de style générale -->
+   <link href="./css/mainStyle.css" rel="stylesheet">
+
+   <!-- Feuille de style spécifique à la page-->
+   <link href="./css/acceuilStyle.css" rel="stylesheet">
+
+   <!-- Feuille de style spécifique aux cartes-->
+   <link href="../css/cardStyle.css" rel="stylesheet">
+
+   <!-- Feuille de style pour les medias queries-->
+   <link href="../css/mediaQueries.css" rel="stylesheet">
+   <title>Bienvenue à l'IUT de Montreuil !</title>
+</head>
+
+<body>
+   <header>
+      <div class="wrapper">
+         <div class="headerLogo">
+            <a href="../index.html">
+               <div><i class="fa-solid fa-user-graduate"></i></div>
+            </a>
+            <p>Visit'IUT!</p>
+         </div>
+         <nav>
+            <a href="index.html">Accueil</a>
+            <a href="pages/itineraire.html">Visite</a>
+            <a href="pages/rgpd.html">RGPD</a>
+         </nav>
+      </div>
+   </header>
+   <main>
+      <div class="wrapper">
+         <div class="main">
+            <div id="f" class="partie welcome">
+               <h1 class="h1">Bienvenue à l'IUT de Montreuil !</h1>
+               <hr>
+               <p>Chers étudiants, nous vous accueillerons chaleureusement à l’IUT de Montreuil. Pour vous aider à vous
+                  adapter à l’IUT, ce site de bienvenue est mis à votre disposition. Vous y trouverez un itinéraire des
+                  places importantes (Cafétéria, salle de travail…).
+               </p>
+               <p>En fin de page un audio de présentation en anglais de la page est disponible.</p>
+               <p> Vous retrouverez également le processus de construction du site par les étudiants en informatique de
+                  l’IUT de Montreuil. </p>
+            </div>
+            <div class=" partie conception">
+               <h2 class="h2 p1">Conception</h2>
+               <p>Dans un premier temps, il fallait qu’on se décide de l’aspect visuel de notre site, pour cela nous
+                  avons parcouru différents sites afin de trouver de l’inspiration. Après discussion, nous nous sommes
+                  mis d’accord sur une maquette générale.
+               <p>
+                  C’est aussi pendant cette discussion que nous avons décidé de présenter notre itinéraire sous la forme
+                  de “carte”, on a donc fait une maquette spécifique à celle-ci.
+               </p>
+               <div class="container-tabImg">
+                  <table class="tabImg">
+                     <tr>
+                        <td> <a href="./content/pictures/Carte.jpg" target="_blank"> <img
+                                 src="./content/pictures/Carte.jpg" alt="Croquis de la maquette de la carte"> </a>
+                        </td>
+                        <td> <a href="./content/pictures/Maquette.jpg" target="_blank">
+                              <img src="./content/pictures/Maquette.jpg" alt="Croquis de la maquette generale du site">
+                           </a> </td>
+                     </tr>
+                  </table>
+               </div>
+               <p>Ensuite, avec nos maquettes faites, nous sommes passés à une phase dite de découpe: il s’agit
+                  d’associer notre maquette à des balises html. Enfin, nous avons procédé à la mise en forme selon une
+                  logique “d'entonnoir" et de séparation des feuilles de styles : on commence par la mise en forme des
+                  éléments communs pour aller aux plus spécifiques en les séparant par catégorie. Cela nous a permis de
+                  gagner en lisibilité et efficacité.
+               </p>
+               <p>En outre, notre cliente nous avait demandé d’ajouter la possibilité d’interagir avec le contenu de
+                  notre site, nous avions expliqué que cela n’était pas possible sans l'élaboration d’une base de
+                  données. Néanmoins, on souhaitait donner un aperçu visuel de ce que pourrait donner par exemple un
+                  ajout au favori. Et nous avons développé un script javascript permettant d’ajouter les cartes aux
+                  favoris de manière locale.</p>
+               <h2 class="h2 p2">Principaux éléments de structure et de style</h2>
+               <p>Les trois pages sont structurées selon la convention header/main/footer. En outre, ces trois balises
+                  contiennent un “wrapper”, il s’agit d’une balise générique qui permet de centrer le contenu.</p>
+               <p>Chaque page est liée à au moins trois feuilles de style. La première contient les règles de mise en
+                  forme commune, la deuxième contient les règles spécifiques au main de la page et la troisième contient
+                  les règles des médias queries. En outre, il y a une feuille de style contenant les règles spécifiques
+                  aux cartes.</p>
+            </div>
+         </div>
+         <div class="container-tab">
+            <h2 class="h2 p3">Répartition des tâches de la SAÉ</h2>
+            <hr>
+            <table class="tabRépartition">
+               <tr>
+                  <td id="td-2">Zen</td>
+                  <td>
+                     <ul>
+                        <li>HTML : Structure générale (Header, Footer et main Wrapper ), page itinéraire</li>
+                        <li>CSS : Structure générale, cartes itineraire, page itinéraire, media queries</li>
+                        <li>Javascript: Ajout boutton favori</li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td id="td-2">Imman</td>
+                  <td id="td-2-bis">
+                     <ul>
+                        <li>HTML : Page RGPD et Acceuil</li>
+                        <li>CSS : RGPD et Acceuil </li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td id="td-2">Caroline</td>
+                  <td>
+                     <ul>
+                        <li> HTML: Page d'Accueil</li>
+                        <li> CSS : Page Itineraire</li>
+                        <li> Design des cartes</li>
+                     </ul>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="container-audio">
+            <h2 id="h2Audio">Présentation du site en anglais</h2>
+            <div>
+               <figure>
+                  <audio class="audio" controls src="./content/audio/SAE_reccueil_besoin_presentHomePage.mp3">
+                  </audio>
+               </figure>
+            </div>
+         </div>
+      </div>
+   </main>
+   <footer>
+      <div class="wrapper">
+         <ul>
+            <li>AMALADASSE Imann (C1)</li>
+            <li>ZHENG Caroline (C2)</li>
+            <li>AHMED-KAMAL Zen (C2)</li>
+         </ul>
+         <p>Groupe C - 07/12/2022</p>
+      </div>
+   </footer>
+</body>
+
+</html>
