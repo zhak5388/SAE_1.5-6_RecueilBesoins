@@ -93,13 +93,13 @@ img {
     background-color: #f8f4e3;
     border: 4px solid #006e90;
 
-    margin: auto;
+    /*margin: auto;*/
     box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.22);
     margin-top: 30px;
 }
 
 .tabRépartition {
-    margin: auto;
+    /*margin: auto;*/
     border-collapse: collapse;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
