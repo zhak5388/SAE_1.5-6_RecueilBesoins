@@ -1,6 +1,4 @@
 :root {
-    --breakpoint-desktop: 991px;
-    --breakpoint-tablet: 768px;
     --paddingWrapper: 10px;
 }
 
@@ -32,15 +30,6 @@
     header nav {
         gap: 10px;
     }
-/*
-    .wrapper {
-        border: 10px dashed yellow;
-    }
-
-    header, footer {
-        border: 10px dashed orange;
-    }
-    */
 
     /** Spécifique à page itinéraire **/
     .welcomeBox__image {
@@ -61,7 +50,9 @@
     }
 
     .cardIUT__content__body,
-    .cardIUT__content__title, .cardIUT--inverted .cardIUT__content__body, .cardIUT--inverted .cardIUT__content__title {
+    .cardIUT__content__title,
+    .cardIUT--inverted .cardIUT__content__body,
+    .cardIUT--inverted .cardIUT__content__title {
         margin-left: 0;
         margin-right: 0;
     }
@@ -71,7 +62,8 @@
         padding-right: 0;
     }
 
-    .cardIUT__favorite, .cardIUT--inverted .cardIUT__favorite {
+    .cardIUT__favorite,
+    .cardIUT--inverted .cardIUT__favorite {
         border-bottom-right-radius: 0;
         border-top-right-radius: var(--arrondiBord);
 
@@ -101,30 +93,28 @@
         text-align: center;
     }
 
-    .container-audio
-    {
+    /*Spécifique page Accueil*/
+    .container-audio {
         flex-direction: column;
     }
-    #h2Audio
-    {
+
+    #h2Audio {
         align-self: center;
     }
-    .containerValidationPicture a
-    {
+
+    /*Spécifique page RGPD*/
+    .containerValidationPicture a {
         width: 100%;
     }
 }
 
-@media all and (min-width: 768px) and (max-width: 1200px)
-{
-    .wrapper
-    {
+@media all and (min-width: 768px) and (max-width: 1200px) {
+    .wrapper {
         width: 90%;
     }
 }
 
-@media all and (min-width: 768px) and (max-width: 1000px)
-{
+@media all and (min-width: 768px) and (max-width: 1000px) {
     .cardIUT {
         width: 100%;
     }

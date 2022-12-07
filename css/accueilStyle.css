@@ -1,33 +1,20 @@
 /*styles.css*/
-
-/*
-body{
-    
-    font-family: Arial;
-    font-size: 100%;
-    color: rgb(0, 0, 0);
-}
-*/
-
-main
-{
-    /*font-family: Arial;*/
+main {
     color: rgb(0, 0, 0);
 }
 
-main .wrapper
-{
+main .wrapper {
     padding-bottom: 30px;
 }
 
-main p{
+main p {
     font-size: large;
-} 
+}
 
-main .welcome{
+main .welcome {
 
     font-weight: bold;
-    background-image:  url("../content/pictures/jardin.jpg");
+    background-image: url("../content/pictures/jardin.jpg");
     background-size: 1021px 500px;
 
     text-align: center;
@@ -37,8 +24,8 @@ main .welcome{
     text-shadow: rgb(255, 255, 255) 1px 0 10px;
 }
 
-main .conception{
-    
+main .conception {
+
     text-align: center;
     padding: 20px;
     color: rgb(255, 255, 255);
@@ -47,58 +34,59 @@ main .conception{
     margin-top: 30px;
 }
 
-h1,.h2 {
+h1,
+.h2 {
     text-align: center;
     color: #000;
-    
-  
 
-  text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
-	
+
+
+    text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+
 }
 
 
 hr {
     color: #006e90;
 }
-img{
+
+img {
     width: 100%;
 }
 
-.container-tabImg{
+.container-tabImg {
     display: flex;
     justify-content: space-around;
 }
 
-.tabImg{
-    width:50%;
+.tabImg {
+    width: 50%;
     overflow: hidden;
     border-spacing: 15px;
-     padding: 25px;
+    padding: 25px;
     color: rgb(0, 0, 0);
-    border-width:1px;
-    border-style:solid;
-    border-color:black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
     border-radius: 3px;
-    
-   
 
-    background-image: 
-    url(../content/pictures/DESEMBARALHE-Black-Background-Css.jpg)
-    ;
-} 
+
+
+    background-image:
+        url(../content/pictures/DESEMBARALHE-Black-Background-Css.jpg);
+}
 
 /* ---------------------- Partie Tableau ---------------------- */
 
 
 .td-2 {
     padding: 15px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     color: rgb(0, 0, 0);
-    border-width:1px;
-    border-style:solid;
-    border-color:black;
-    width:50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    width: 50%;
 }
 
 .container-tab {
@@ -106,47 +94,49 @@ img{
     border: 4px solid #006e90;
 
     margin: auto;
-    box-shadow: 0 6px 28px rgba(0,0,0,0.25), 0 4px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.22);
     margin-top: 30px;
 }
+
 .tabRépartition {
     margin: auto;
     border-collapse: collapse;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    border-width:1px;
-    border-style:solid;
-    border-color:black;
-    width:80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    width: 80%;
     margin-bottom: 20px;
 }
-#td-2-bis{
+
+#td-2-bis {
     border: 1px solid black;
 }
 
 /* ---------------------- Partie Audio ---------------------- */
 
-#h2Audio{
-        text-transform: uppercase;
-		font-weight: 700;
-		font-family: "Josefin Sans", sans-serif;
-		background: linear-gradient(to right,#7ed5f0 10%, #e65858 50%, #000000 60%);
-		background-size: auto auto;
-		background-clip: border-box;
-		background-size: 200% auto;
-		
-		background-clip: text;
+#h2Audio {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(to right, #7ed5f0 10%, #e65858 50%, #000000 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
 
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		animation: textclip 1.5s linear infinite;
-		display: inline-block;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
 }
 
 @keyframes textclip {
-	to {
-		background-position: 200% center;
-	}
+    to {
+        background-position: 200% center;
+    }
 }
 
 .container-audio {
@@ -154,17 +144,17 @@ img{
     border-radius: 30px;
     justify-content: space-around;
     border: 2px solid #006e90;
-    box-shadow: 0 6px 28px rgba(0,0,0,0.25), 0 4px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.22);
     background-color: #e3e7f8;
     margin-top: 30px;
 }
+
 .audio {
     display: flex;
     margin: auto;
     border-radius: 30px;
 }
-#h2Audio
-{
+
+#h2Audio {
     padding-left: 30px;
 }
-
