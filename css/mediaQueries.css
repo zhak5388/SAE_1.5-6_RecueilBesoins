@@ -110,6 +110,8 @@
     #mainAccueil .main, #mainAccueil .container-tab, #mainAccueil .container-audio
     {
         width: 95%;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     /*Spécifique page RGPD*/
